@@ -14,7 +14,8 @@ LABEL maintainer="thome <taojy123@163.com>"
 RUN apt update
 
 RUN apt update && \
-    apt install -y --no-install-recommends gcc clang make git && \
+    apt install -y --no-install-recommends gcc clang make && \
+    apt install -y --no-install-recommends git && \
     apt install -y --no-install-recommends libglfw3 libglfw3-dev libfreetype6-dev libssl-dev && \
     apt install -y --no-install-recommends openssl ca-certificates && \
     apt clean && \
