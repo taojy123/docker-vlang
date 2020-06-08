@@ -23,7 +23,7 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/vlang
-RUN git clone https://github.com/vlang/v -b 0.1.25
+RUN git clone https://github.com/vlang/v -b 0.1.27
 
 WORKDIR /opt/vlang/v
 RUN make
