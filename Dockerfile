@@ -4,7 +4,7 @@ LABEL maintainer="taojy123 <taojy123@163.com>"
 
 
 RUN yum install -y gcc clang make git openssl ca-certificates
-RUN yum groupinstall -y "Development Tools"
+# RUN yum groupinstall -y "Development Tools"
 
 WORKDIR /opt/vlang
 # RUN git clone https://github.com/vlang/v -b 0.1.27
