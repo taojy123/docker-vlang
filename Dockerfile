@@ -1,6 +1,6 @@
 FROM debian:stretch-slim
 
-LABEL maintainer="thome <taojy123@163.com>"
+LABEL maintainer="taojy123 <taojy123@163.com>"
 
 # RUN echo "deb http://mirrors.163.com/debian/ stretch main non-free contrib" > /etc/apt/sources.list && \
 #     echo "deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib" >> /etc/apt/sources.list && \
@@ -13,8 +13,7 @@ LABEL maintainer="thome <taojy123@163.com>"
 
 RUN apt update
 
-RUN apt update && \
-    apt install -y --no-install-recommends gcc clang make && \
+RUN apt install -y --no-install-recommends gcc clang make && \
     apt install -y --no-install-recommends git && \
     apt install -y --no-install-recommends libglfw3 libglfw3-dev libfreetype6-dev libssl-dev && \
     apt install -y --no-install-recommends openssl ca-certificates && \
