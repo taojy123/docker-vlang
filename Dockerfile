@@ -12,6 +12,6 @@ RUN git clone https://github.com/vlang/v  && cd v && git checkout e38a221d
 
 WORKDIR /opt/vlang/v
 RUN make
-RUN ln -s /opt/vlang/v/v /usr/local/bin/v
+RUN ./v symlink
 
 CMD ["v"]
