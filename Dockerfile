@@ -7,8 +7,7 @@ RUN yum install -y gcc clang make git openssl ca-certificates openssl-devel
 RUN yum groupinstall -y "Development Tools"
 
 WORKDIR /opt/vlang
-# RUN git clone https://github.com/vlang/v -b 0.1.27
-RUN git clone https://github.com/vlang/v  && cd v && git checkout e38a221d
+RUN git clone https://github.com/vlang/v -b 0.2
 
 WORKDIR /opt/vlang/v
 RUN make
